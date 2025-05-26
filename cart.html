@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart - Tech-Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<header>
+  <h1 class="logo">Tech-Shop</h1>
+   <nav>
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+      </ul>
+    </nav>
+</header>
+
+<main class="cart-container">
+  <!-- Left Side: Cart Items -->
+  <section class="cart-items">
+    <h2>Your Cart (3 items)</h2>
+
+    <div class="cart-card">
+      <img src="products/boat110-1.png" alt="JBL" />
+      <div class="cart-info">
+        <h3>JBL Live 660NC Wireless Over-Ear NC</h3>
+        <p><span class="price">₹9,999</span> <span class="strike">₹14,999</span></p>
+        <div class="quantity">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-card">
+      <img src="products/jbl500bt-2.png" alt="boAt" />
+      <div class="cart-info">
+        <h3>boAt Rockerz 510 On-Ear Wireless</h3>
+        <p><span class="price">₹1,299</span> <span class="strike">₹3,999</span></p>
+        <div class="quantity">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-card">
+      <img src="products/sonyXb910n-1.png" alt="boAt Airdopes" />
+      <div class="cart-info">
+        <h3>boAt Airdopes 131 Wireless In-Ear</h3>
+        <p><span class="price">₹1,099</span> <span class="strike">₹2,299</span></p>
+        <div class="quantity">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Right Side: Summary -->
+  <aside class="summary">
+    <h3>Order Summary</h3><br>
+    <p>Original Price: ₹22,978</p><br>
+    <p class="green">Discount: -₹10,132</p><br>
+    <p>Delivery: <strong>Free</strong></p><br>
+    <h2>Total Price: ₹12,846</h2>
+    <button class="btn-checkout">Checkout</button>
+  </aside>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>Help</h4>
+      <ul><li>FAQs</li><li>Track Order</li><li>Return</li></ul>
+    </div>
+    <div>
+      <h4>Policies</h4>
+      <ul><li>Return Policy</li><li>Privacy</li><li>Security</li></ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul><li>About Us</li><li>Contact</li><li>Careers</li></ul>
+    </div>
+    <div>
+      <h4>Tech-Shop</h4>
+      <p>Subscribe for updates</p>
+      <input type="email" placeholder="Email Address*" />
+      <button class="btn-subscribe">Subscribe</button>
+    </div>
+    </div>
+
+  <nav>
+      <ul>
+         <p class="footer-note">2024 | Built by ADARSHA HELVAR</p>
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-linkedin"></i></i></i></a></li>
+      </ul>
+    </nav>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Page - Tech-Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #111; color: #eee; font-family: 'Segoe UI', sans-serif; }
+    header, footer { background: #1a1a1a; padding: 20px; }
+    .logo { font-size: 24px; color: #b0bdf5; font-weight: bold; }
+    nav ul { display: flex; gap: 20px; list-style: none; justify-content: flex-end; }
+    nav ul li a { color: white; font-size: 20px; }
+
+    .container { display: flex; padding: 40px; gap: 40px; }
+    .thumbnails { display: flex; flex-direction: column; gap: 10px; }
+    .thumbnails img { width: 60px; border-radius: 8px; border: 2px solid #555; }
+    .main-img { width: 300px; }
+    .info { flex: 1; }
+    .info h2 { font-size: 24px; margin-bottom: 10px; }
+    .info p { margin: 8px 0; }
+    .price { font-size: 24px; color: #f44336; font-weight: bold; }
+    .strike { text-decoration: line-through; color: #777; margin-left: 10px; }
+    .green { color: #00ff99; font-size: 14px; }
+    .offers { margin: 15px 0; }
+    .offers button { background: #1a1a1a; border: 1px solid #555; color: white; padding: 10px; margin-right: 10px; cursor: pointer; }
+    .btn-add { background: red; color: white; padding: 10px 20px; border: none; cursor: pointer; margin: 10px 0; }
+
+    .spec-tabs { display: flex; justify-content: center; gap: 30px; margin: 30px 0; }
+    .spec-tabs button { background: red; color: white; padding: 8px 16px; border: none; border-radius: 3px; cursor: pointer; }
+    .specs table { width: 100%; max-width: 600px; margin: auto; border-collapse: collapse; }
+    .specs td { padding: 10px; border-bottom: 1px solid #444; }
+    .specs td:first-child { color: #999; }
+    .specs td:last-child { font-weight: bold; }
+
+    .related { padding: 40px 20px; }
+    .related h3 { text-align: center; margin-bottom: 20px; }
+    .related-products { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .related-card { background: #1a1a1a; width: 200px; border-radius: 5px; padding: 10px; text-align: center; }
+    .related-card img { width: 100%; border-radius: 5px; }
+    .related-card .price { color: #ff4747; }
+    .related-card button { background: red; border: none; padding: 8px; color: white; margin-top: 10px; cursor: pointer; }
+
+    .advantages { text-align: center; margin: 30px 0; }
+    .adv-list { display: flex; justify-content: space-around; flex-wrap: wrap; color: #ccc; margin-top: 20px; }
+    .adv-list div { width: 180px; margin-bottom: 20px; }
+    .adv-list i { font-size: 24px; color: red; margin-bottom: 10px; display: block; }
+
+    .footer-columns { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 30px; }
+    .footer-columns div { width: 200px; margin-bottom: 20px; }
+    .footer-columns ul { list-style: none; padding: 0; }
+    .footer-columns li { margin: 5px 0; }
+    input[type="email"] { width: 100%; padding: 8px; background: #222; border: none; color: white; margin-top: 10px; }
+    .btn-subscribe { padding: 10px; background: red; border: none; color: white; margin-top: 10px; }
+    .footer-note { text-align: center; font-size: 12px; color: #777; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Tech-Shop</div>
+    <nav>
+      <ul>
+        <li><a href="home.html"><i class="fa-solid fa-house"></i></a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i><sup style="color:red">4</sup></a></li>
+        <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="container">
+    <div class="thumbnails">      <img src="products/jbl660nc-1.png">
+      <img src="products/jbl660nc-2.png">
+      <img src="products/jbl660nc-3.png">
+      <img src="products/jbl660nc-4.png">
+    </div>
+    <img src="products/jbl660nc-1.png" class="main-img">
+    <div class="info">
+      <h2>JBL Live 660NC</h2>
+      <p>Wireless Over-Ear NC Headphones</p>
+      <p style="color: red;">★★★★★ | 1234 Ratings</p>
+      <p class="price">₹9,999 <span class="strike">₹14,999</span></p>
+      <p class="green">You save: ₹5,000 (33%)</p>
+      <p class="green">✔ In Stock</p>
+      <div class="offers">
+        <button>No Cost EMI on Credit Card</button>
+        <button>Pay Later & Avail Cashback</button>
+      </div>
+      <button class="btn-add">Add to cart</button>
+    </div>
+  </section>
+
+  <div class="spec-tabs">
+    <button>Specifications</button>
+    <button style="background:#1a1a1a; color:#eee">Overview</button>
+    <button style="background:#1a1a1a; color:#eee">Reviews</button>
+  </div>
+
+  <section class="specs">
+    <table>
+      <tr><td>Brand</td><td>JBL</td></tr>
+      <tr><td>Model</td><td>JBL Live 660NC</td></tr>
+      <tr><td>Generic Name</td><td>Headphones</td></tr>
+      <tr><td>Headphone Type</td><td>Over Ear</td></tr>
+      <tr><td>Connectivity</td><td>Wireless</td></tr>
+      <tr><td>Microphone</td><td>Yes</td></tr>
+    </table>
+  </section>
+
+  <section class="related">
+    <h3>Related Products</h3>
+    <div class="related-products">
+      <div class="related-card">
+        <img src="products/jbl660nc-1.png">
+        <p>JBL Live 660NC</p>
+        <p><span class="price">₹9,999</span> <span class="strike">₹14,999</span></p>
+        <button>Add to cart</button>
+      </div>
+      <div class="related-card">
+        <img src="products/boat518-1.png">
+        <p>boAt Rockerz 518</p>
+        <p><span class="price">₹1,299</span> <span class="strike">₹3,990</span></p>
+        <button>Add to cart</button>
+      </div>
+      <div class="related-card">
+        <img src="products/boat410-1.png">
+        <p>boAt Rockerz 410</p>
+        <p><span class="price">₹1,599</span> <span class="strike">₹2,990</span></p>
+        <button>Add to cart</button>
+      </div>
+      <div class="related-card">
+        <img src="products/sonyxb910n-1.png">
+        <p>Sony WH-XB910N</p>
+        <p><span class="price">₹13,489</span> <span class="strike">₹19,990</span></p>
+        <button>Add to cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages">
+    <h3>Our Advantages</h3>
+    <div class="adv-list">
+      <div><i class="fa-solid fa-truck-fast"></i> Express Delivery <br><small>Ships in 24 Hours</small></div>
+      <div><i class="fa-solid fa-shield"></i> Brand Warranty <br><small>100% Original products</small></div>
+      <div><i class="fa-solid fa-gift"></i> Exciting Deals <br><small>On all prepaid orders</small></div>
+      <div><i class="fa-solid fa-credit-card"></i> Secure Payments <br><small>SSL / Secure certificate</small></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-columns">
+      <div>
+        <h4>Tech-Shop</h4>
+        <p>Subscribe to our Email alerts to receive early discount offers, and new products info.</p>
+        <input type="email" placeholder="Email Address*">
+        <button class="btn-subscribe">Subscribe</button>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li>FAQs</li><li>Track Order</li><li>Cancel Order</li><li>Return Order</li><li>Warranty Info</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Policies</h4>
+        <ul>
+          <li>Return Policy</li><li>Security</li><li>Sitemap</li><li>Privacy Policy</li><li>Terms & Conditions</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li>About Us</li><li>Contact Us</li><li>Service Centres</li><li>Careers</li><li>Affiliates</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">2024 | All Rights Reserved. Built by | ADARSHA HELVAR</p>
+  </footer>
+</body>
+</html>
+
